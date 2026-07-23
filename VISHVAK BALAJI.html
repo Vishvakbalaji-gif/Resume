@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YOUR NAME — Resume</title>
+  <meta name="description" content="Resume of YOUR NAME — Role, Skills, Experience, Projects, Contact" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <h1 class="name">YOUR NAME</h1>
+        <p class="role">Product Engineer • Frontend Developer</p>
+      </div>
+      <nav class="actions">
+        <button id="theme-toggle" aria-label="Toggle color theme">🌙</button>
+        <a class="btn-outline" href="#contact">Contact</a>
+        <a class="btn" href="resume.pdf" download>Download PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>
+        A concise 2–3 sentence summary: what you build, your impact, and the kind of problems you solve.
+        Example: "Frontend engineer with 6+ years building accessible web apps and design systems. Focused on performance,
+        maintainability, and clear product thinking."
+      </p>
+
+      <div class="contact-row">
+        <div>
+          <strong>Email</strong><br />
+          <a href="mailto:you@example.com">you@example.com</a>
+        </div>
+        <div>
+          <strong>Location</strong><br />
+          City, Country
+        </div>
+        <div>
+          <strong>Links</strong><br />
+          <a href="https://github.com/youruser" target="_blank" rel="noopener">GitHub</a> •
+          <a href="https://linkedin.com/in/youruser" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <header class="job-header">
+          <h3>Senior Frontend Engineer</h3>
+          <span class="company">Acme Corp — 2021–Present</span>
+        </header>
+        <ul>
+          <li>Led the rewrite of the company design system used by 20+ apps, reducing bundle size by 18%.</li>
+          <li>Mentored junior engineers and introduced testing standards (Jest + React Testing Library).</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header class="job-header">
+          <h3>Frontend Engineer</h3>
+          <span class="company">OtherCo — 2018–2021</span>
+        </header>
+        <ul>
+          <li>Built a performance-focused dashboard that cut load time from 4s to 1.2s.</li>
+          <li>Improved accessibility across the product to pass WCAG AA audits.</li>
+        </ul>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <div class="card">
+        <h4>Skills</h4>
+        <p>JavaScript, TypeScript, React, Next.js, HTML, CSS, Node.js, Testing, Accessibility</p>
+      </div>
+
+      <div class="card">
+        <h4>Education</h4>
+        <p>B.Sc. Computer Science — University Name — 2014–2018</p>
+      </div>
+
+      <div class="card">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="#">Project A</a> — Short 1-line description.</li>
+          <li><a href="#">Project B</a> — Short 1-line description.</li>
+        </ul>
+      </div>
+    </aside>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Interested in working together? Email <a href="mailto:you@example.com">you@example.com</a>, or reach out on LinkedIn.</p>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Replace with real form or mailto link.');">
+        <label>
+          <span class="sr-only">Name</span>
+          <input type="text" placeholder="Your name" aria-label="Your name" />
+        </label>
+        <label>
+          <span class="sr-only">Message</span>
+          <textarea placeholder="Message" aria-label="Message"></textarea>
+        </label>
+        <button class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© YEAR YOUR NAME — Built with HTML & CSS. Printable resume available via Download PDF.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
